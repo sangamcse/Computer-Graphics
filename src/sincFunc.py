@@ -16,10 +16,10 @@ def display():
     sinc=0
 
     glPointSize(2)
-    glBegin(GL_POINTS)
+    glBegin(GL_LINE_STRIP)
     while (x<10.0):
     	sinc = math.sin(x) / x
-    	glVertex2f(x*0.09, sinc*0.09)
+    	glVertex2f(x*0.09*0.1, sinc*0.09)
         x = x + 0.1
     glEnd()
     glFlush()
