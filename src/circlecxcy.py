@@ -9,7 +9,6 @@ def circlecxcy():
 	cy=0
 	r=1
 	angl = 0
-	print math.sin(30*(math.pi)/180)
 	glClearColor(0, 0, 0, 0)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 	glPointSize(2)
