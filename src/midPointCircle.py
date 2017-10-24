@@ -2,21 +2,33 @@ from OpenGL.GLUT import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
+def init():
+	glClearColor(0.0,0.0,0.0,0.0)
+	glOrtho(-100,100,-100,100,-1,1)
 
-def draw():
-	r = 10
-	cx,cy=0,0
-	x,y=0,r
-	p = 1 - r
-	glClearColor(0, 0, 0, 0)
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-	glPointSize(5)
+def point(x,y):
 	glBegin(GL_POINTS)
 	glColor3f(1.0, 0, 0)
-	glVertex2f(x*0.1,y*0.1)
+	glVertex2d(x,y);
+	glVertex2d(-x,y);
+	glVertex2d(-x,-y);
+	glVertex2d(x,-y);
+	glVertex2d(y,x);
+	glVertex2d(-y,x);
+	glVertex2d(-y,-x);
+	glVertex2d(y,-x);
 	glEnd()
-	while (y>=x):
 
+def draw():
+	r = 100
+	cx,cy=0,0
+	x,y=0,r
+	p =  - r
+	glClearColor(0, 0, 0, 0)
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+	glPointSize(2)
+	point(x,y)
+	while (y>=x):
 		if (p<0):
 			x=x+1
 			p = p + 2*x +1
@@ -25,17 +37,14 @@ def draw():
 			y=y-1
 			p = p + 2*x +1 - 2*y
 
-		glBegin(GL_POINTS)
-		glColor3f(1.0, 0, 0)
-		glVertex2f(x*0.1,y*0.1)
-		glEnd()
+		point(x,y)
 
 	glFlush()
 
 glutInit(sys.argv)
-
 glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE | GLUT_DEPTH)
-glutInitWindowSize(250, 250)
-glutCreateWindow('Mid-point Line')
+glutInitWindowSize(500, 500)
+glutCreateWindow('Mid-point Circle')
+init()
 glutDisplayFunc(draw)
 glutMainLoop()
