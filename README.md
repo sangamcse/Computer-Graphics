@@ -10,4 +10,4 @@ Python interpreters are available for many operating systems, allowing Python co
 
 The code in the repo is made using Python and OpenGL only.
 
-### This repo contains src folder which contains codes basics of OpenGL
+### This repo contains src folder which contains codes basics of OpenGL.
