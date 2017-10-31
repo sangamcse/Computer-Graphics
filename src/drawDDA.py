@@ -6,9 +6,6 @@ def init():
 	glClearColor(0.0,0.0,0.0,0.0)
 	glOrtho(-100,100,-100,100,-1,1)
 
-def ROUND(a):
-	return int(a + 0.5)
-
 def point(x,y):
 
 	glBegin(GL_POINTS)
@@ -18,29 +15,29 @@ def point(x,y):
 
 
 def drawDDA():
-	x1,y1,x2,y2 = -50,-25,20,40
-	x,y = x1,y1
+	x1,y1,x2,y2 = 20,25,-25,-20
 	dx = (x2-x1)
 	dy = (y2-y1)
 	glClearColor(0, 0, 0, 0)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 	glPointSize(2)
-
-	if abs(dx)>abs(dy):
-		slope=dx
-
+	steps=1
+	if abs(dx) > abs(dy):
+		steps = abs(dx)
 	else:
-		slope=dy
+		steps = abs(dy)
 
-	xi=dx/slope
-	yi=dy/slope
-	steps=int(slope)
-	for i in range(steps):
-		x = x + xi
-		y = y + yi
-		x = (ROUND(x))
-		y = (ROUND(y))
+	xi=yi=x=y=0.0
+	xi = dx / float(steps)
+	yi = dy / float(steps)
+
+	x = x1
+	y = y1
+	i=0
+	for i in range(1,steps):
 		point(x,y)
+		x=x+xi
+		y=y+yi
 
 	glFlush()
 
