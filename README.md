@@ -5,7 +5,7 @@ OpenGL is the industry's most widely used environment for the development of por
 
 OpenGL is designed to be hardware-independent.
 
-### Python
+## Python
 Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems.
 
 The code in the repo is made using Python and OpenGL only.
