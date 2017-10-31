@@ -11,3 +11,4 @@
 | 7     | [:white_check_mark:](midPointLine.py) | Draw a line using Mid-point Algorithm |
 | 8     | [:white_check_mark:](midPointCircle.py) | Draw a Circle using Mid-point Algorithm |
 | 9     | [:white_check_mark:](midPointEllipse.py) | Draw an Ellipse using Mid-point Algorithm |
+|10     | [:white_check_mark:]() | ___ |
