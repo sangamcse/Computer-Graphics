@@ -138,6 +138,7 @@ int main(int argc,char** argv)
 {
     printf("Enter line co-ordinates:");
     cin>>xd1>>yd1>>xd2>>yd2;
+    printf("Press \"c\" now\n");
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
     glutInitWindowSize(600,600);

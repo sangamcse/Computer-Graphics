@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		578842191FB45B8B00A4A514 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		57B568BA1FB396C6003CE78C /* Bezier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bezier; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B568BD1FB396C6003CE78C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		57B568C51FB396DA003CE78C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -47,6 +48,7 @@
 		57B568B11FB396C6003CE78C = {
 			isa = PBXGroup;
 			children = (
+				578842191FB45B8B00A4A514 /* readme.md */,
 				57B568BC1FB396C6003CE78C /* Bezier */,
 				57B568BB1FB396C6003CE78C /* Products */,
 				57B568C41FB396DA003CE78C /* Frameworks */,

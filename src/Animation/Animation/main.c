@@ -354,6 +354,7 @@ visible(int vis)
 int
 main(int argc, char **argv)
 {
+    printf("Press space bar to see animations");
     GLenum type;
     
     glutInitWindowSize(400, 300);

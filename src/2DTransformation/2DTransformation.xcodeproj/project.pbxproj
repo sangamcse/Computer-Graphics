@@ -29,6 +29,7 @@
 		5705101F1FB33B9400C53281 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		570510271FB33BAF00C53281 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		570510281FB33BAF00C53281 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		575A06DF1FB45E0000C4C488 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		570510131FB33B9400C53281 = {
 			isa = PBXGroup;
 			children = (
+				575A06DF1FB45E0000C4C488 /* readme.md */,
 				5705101E1FB33B9400C53281 /* 2DTransformation */,
 				5705101D1FB33B9400C53281 /* Products */,
 				570510261FB33BAF00C53281 /* Frameworks */,

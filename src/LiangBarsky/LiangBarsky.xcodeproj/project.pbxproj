@@ -29,6 +29,7 @@
 		578FDC051FB38DB5002BC59C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		578FDC0D1FB38DC1002BC59C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		578FDC0E1FB38DC1002BC59C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		57D3ECC31FB4565900A7EBDC /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		578FDBF91FB38DB5002BC59C = {
 			isa = PBXGroup;
 			children = (
+				57D3ECC31FB4565900A7EBDC /* File */,
 				578FDC041FB38DB5002BC59C /* LiangBarsky */,
 				578FDC031FB38DB5002BC59C /* Products */,
 				578FDC0C1FB38DC1002BC59C /* Frameworks */,

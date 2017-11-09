@@ -589,7 +589,7 @@ int main(int argc, char** argv){
     glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
     glutInitWindowSize(640,480);
     glutInitWindowPosition(200,200);
-    glutCreateWindow("Many Amaze Very GL WOW");
+    glutCreateWindow("Bezier");
     glutDisplayFunc(world);
     glutMotionFunc(drag_start);
     glutMouseFunc(mouse);
