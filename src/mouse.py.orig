@@ -5,6 +5,7 @@ class Point:
     def __init__(self,x,y):
         self.x=x
         self.y=y
+
 points=[]
 def initFun():
     glClearColor(1.0,1.0,1.0,0.0)
@@ -30,6 +31,7 @@ def mouseFun(button,state,x,y):
         if len(points) != 0:
             points=points[:-1]
     glutPostRedisplay()
+    
 if __name__ == '__main__':
     glutInit()
     glutInitWindowSize(640,480)

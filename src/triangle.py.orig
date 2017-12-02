@@ -3,47 +3,35 @@ from OpenGL.GLUT import *
 from OpenGL.GLU import *
 import random
 
-x=115
-y=121
-
 def initFun():
     glClearColor(1.0,1.0,1.0,0.0)
     glColor3f(0.0,0.0, 0.0)
-    glPointSize(4.0)
+    glPointSize(1.0)
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    gluOrtho2D(0.0,640.0,0.0,480.0)
-
-def mouseFun(button,state,xIn,yIn):
-    global x
-    global y
-    if button==GLUT_LEFT_BUTTON and state==GLUT_DOWN:
-        x=xIn
-        y=480-yIn
-
-    glutPostRedisplay()
+    gluOrtho2D(0.0,640.0,0.0,480.0)   
 
 def displayFun():
-    global x
-    global y
     glClear(GL_COLOR_BUFFER_BIT)
     glBegin(GL_POINTS)
-    M=40
-    L=3
+    x=[0.0,640.0,320.0]
+    y=[0.0,0.0  ,480.0]
+    curx=0
+    cury=320
+    glVertex2f(curx,cury)
     for i in range(0,500000):
-        glVertex2f(x,y)
-        tmp=x
-        x=M*(1+2*L)-y+ abs(x-L*M)
-        y=tmp
+        idx=random.randint(0,2)
+        curx=(curx+x[idx])/2.0
+        cury=(cury+y[idx])/2.0
+        glVertex2f(curx,cury)
     glEnd()
     glFlush()
 
 if __name__ == '__main__':
     glutInit()
     glutInitWindowSize(640,480)
-    glutCreateWindow("Gingerbread")
+    glutCreateWindow("Sierpinski")
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)
     glutDisplayFunc(displayFun)
-    glutMouseFunc(mouseFun)
     initFun()
     glutMainLoop()

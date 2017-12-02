@@ -1,9 +1,7 @@
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
-
 import random
-
 def initFun():
     glClearColor(1.0,1.0,1.0,0.0)
     glColor3f(0.0,0.0, 0.0)
@@ -11,15 +9,11 @@ def initFun():
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
     gluOrtho2D(0.0,640.0,0.0,480.0)
-    
-
 def displayFun():
     glClear(GL_COLOR_BUFFER_BIT)
     glBegin(GL_POINTS)
-
     x=[0.0,640.0,320.0]
     y=[0.0,0.0  ,480.0]
-
     curx=0
     cury=320
     glVertex2f(curx,cury)
@@ -30,7 +24,6 @@ def displayFun():
         glVertex2f(curx,cury)
     glEnd()
     glFlush()
-
 if __name__ == '__main__':
     glutInit()
     glutInitWindowSize(640,480)
